@@ -5,6 +5,14 @@
 
 <meta name="description" content="<%= metadata.description %>" />
 
+<%# custom attribute %>
+<%# https://edge.bridgetownrb.com/docs/bundled-configurations#turbo %>
+<meta name="turbo-cache-control" content="no-preview" />
+<%# https://turbo.hotwired.dev/handbook/drive#reloading-when-assets-change %>
+<link rel="stylesheet" href="/application-258e88d.css" data-turbo-track="reload"> 
+<script src="/application-cbd3cd4.js" data-turbo-track="reload"></script>
+<%# custom attribute %>
+
 <link rel="stylesheet" href="<%= webpack_path :css %>" />
 <script src="<%= webpack_path :js %>" defer></script>
 <%= live_reload_dev_js %>
