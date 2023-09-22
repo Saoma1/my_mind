@@ -8,11 +8,8 @@
 <%# custom attribute %>
 <%# https://edge.bridgetownrb.com/docs/bundled-configurations#turbo %>
 <meta name="turbo-cache-control" content="no-preview" />
-<%# https://turbo.hotwired.dev/handbook/drive#reloading-when-assets-change %>
-<link rel="stylesheet" href="/application-258e88d.css" data-turbo-track="reload"> 
-<script src="/application-cbd3cd4.js" data-turbo-track="reload"></script>
-<%# custom attribute %>
+<%# // %>
 
-<link rel="stylesheet" href="<%= webpack_path :css %>" />
-<script src="<%= webpack_path :js %>" defer></script>
+<link rel="stylesheet" href="<%= webpack_path :css %>" data-turbo-track="reload" <%# https://turbo.hotwired.dev/handbook/drive#reloading-when-assets-change %> />
+<script src="<%= webpack_path :js %>" defer data-turbo-track="reload"></script>
 <%= live_reload_dev_js %>
