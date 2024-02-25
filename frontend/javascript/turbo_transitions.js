@@ -43,6 +43,6 @@ document.addEventListener("turbo:load", () => {
       { opacity: 0, transform: `translateY(${movement}) scale(${scale})` },
       { opacity: 1, transform: "translateY(0px) scale(1)" }
     ],
-    { duration: 150, easing: "cubic-bezier(0.45, 0, 0.55, 1)" }
+    { duration: 500, easing: "cubic-bezier(0.45, 0, 0.55, 1)" }
   )
 })
