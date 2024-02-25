@@ -31,12 +31,6 @@ const outputFolder = "output"
  * @typedef { import("esbuild").BuildOptions } BuildOptions
  * @type {BuildOptions}
  */
-
-const esbuildOptions = {
-    minify: false, // Disables minification for JavaScript
-    minifySyntax: false, // Optionally disable syntax-only minifications
-    minifyWhitespace: false, // Disable the whitespace minification
-    minifyIdentifiers: false, // Disable the minification of identifiers
-  }
+const esbuildOptions = {}
 
 build(outputFolder, esbuildOptions)
