@@ -7,15 +7,15 @@
   BRIDGETOWN_ENV = "production"
 
 [build.processing]
-  skip_processing = true
+  skip_processing = false
 [build.processing.css]
   bundle = false
-  minify = false
+  minify = true
 [build.processing.js]
   bundle = false
-  minify = false
+  minify = true
 [build.processing.html]
-  pretty_urls = true
+  pretty_urls = false
 [build.processing.images]
   compress = true
 
@@ -30,7 +30,7 @@
     Cache-Control = "public, max-age=604800, s-max-age=604800"
 
 [[headers]]
-  for = "*"
+  for = "/"
   [headers.values]
     Link = [
       "<CSS_PATH>; rel=preload; as=style",
