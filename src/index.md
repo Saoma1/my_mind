@@ -4,9 +4,10 @@
 layout: default
 ---
 
-<h1 class="hover:text-red-600" data-controller="example">
+<h1 class="hover:text-red-600" data-controller="example" data-turn-exit data-turn-enter>
   Your mental health is a priority
 </h1>
+
 <p class="flex justify-center">Soon with you</p>
 <% if false %>
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque numquam, vel consequuntur praesentium quia distinctio labore dolore totam ut nostrum magni pariatur dolorem molestias eveniet quas libero accusamus repellendus assumenda!
