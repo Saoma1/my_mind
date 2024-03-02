@@ -1,11 +1,48 @@
-<header>
-  <img src="<%= relative_url '/images/logo.svg' %>" alt="Logo" />
-</header>
+<nav class="bg-white shadow relative mb-16" data-controller="reveal" data-reveal-hidden-class="--open">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+    <div class="flex h-16 justify-between items-center">
+      <div class="flex flex-shrink-0 ">
+        <img class="h-16 w-auto" src="/images/logo.svg" alt="company_logo">
+      </div>
+      <div class="max-md:hidden ml-6 flex space-x-4">
+        <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
+        <a href="<%= relative_url '/' %>" class="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900">Home</a>
+        <a href="<%= relative_url '/about' %>" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">About</a>
+        <a href="<%= relative_url '/about' %>" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Approach</a>
+        <a href="<%= relative_url '/about' %>" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Contact</a>
+        <a href="<%= relative_url '/about' %>" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Services</a>    
+      </div>
 
-<nav>
-  <ul>
-    <li><a class="hover:text-green-600" rel="canonical" href="<%= relative_url '/' %>">Home</a></li>
-    <li><a class="hover:text-green-600" rel="canonical" href="<%= relative_url '/about' %>">About</a></li>
-    <li><a rel="canonical" href="<%= relative_url '/posts' %>">Posts</a></li>
-  </ul>
+      <div class="max-md:hidden flex space-x-4">
+        <div class="flex">
+          <a href="<%= relative_url '/' %>" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-md font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">EN</a>
+          <div class="h-auto bg-black w-[1px] my-2"></div>
+          <a href="<%= relative_url '/' %>" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-md font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">GR</a>
+        </div>
+        <button class="hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded-xl shadow">
+          Book Appointment
+        </button>
+      </div>
+
+      <div class="-mr-2 flex items-center md:hidden h-full">
+        <!-- Mobile menu button -->
+        <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" data-reveal-target="item" data-action="click->reveal#toggle" aria-controls="mobile-menu" aria-expanded="false">
+          <i class="fa-solid fa-bars text-xl"></i>
+          <span class="absolute -inset-0.5"></span>
+          <span class="sr-only">Open main menu</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu, show/hide based on menu state. -->
+  <div data-reveal-target="item" class="w-full fixed left-0 max-md:[&.--open]:translate-x-1/2 translate-x-[110%] transition-transform duration-700 z-[1000] rounded-l-xl bg-orange-200 shadow-2xl">
+    <div class="space-y-2 pb-3 py-6 rounded-l-xl">
+      <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
+      <a href="#" class="block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700">Dashboard</a>
+      <a href="#" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700">Team</a>
+      <a href="#" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700">Projects</a>
+      <a href="#" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700">Calendar</a>
+    </div>
+  </div>
 </nav>

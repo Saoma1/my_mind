@@ -1,5 +1,4 @@
 import "index.css"
-import "syntax-highlighting.css"
 import * as Turbo from "@hotwired/turbo"
 import { Application } from "@hotwired/stimulus"
 import Turn from '@domchristie/turn'
@@ -15,19 +14,26 @@ import '@domchristie/turn/dist/turn.css'
 // Import all JavaScript & CSS files from src/_components
 import components from "bridgetownComponents/**/*.{js,jsx,js.rb,css}"
 
-console.info("Bridgetown is loaded!")
 
-window.Stimulus = Application.start()
+application = Application.start()
 Turn.start()
 
+// external
+import Reveal from 'stimulus-reveal-controller'
+application.register('reveal', Reveal)
+
+// internal
 import controllers from "./controllers/**/*.{js,js.rb}"
 Object.entries(controllers).forEach(([filename, controller]) => {
     if (filename.includes("_controller.") || filename.includes("-controller.")) {
-    const identifier = filename.replace("./controllers/", "")
+        const identifier = filename.replace("./controllers/", "")
         .replace(/[_-]controller\..*$/, "")
         .replace("_", "-")
         .replace("/", "--")
-
-        Stimulus.register(identifier, controller.default)
+        
+        application.register(identifier, controller.default)
     }
 })
+
+// debuggin
+console.info("Bridgetown is loaded!")
