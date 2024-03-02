@@ -3,10 +3,10 @@
   <head>
     <%= render "head", metadata: site.metadata, title: data.title %>
   </head>
-  <body class="<%= data.layout %> <%= data.page_class %>">
+  <body class="<%= data.layout %> <%= data.page_class %> bg-white relative">
     <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
 
-    <main data-turbo="false" data-turn-exit data-turn-enter>
+    <main data-turbo="false" data-turn-exit data-turn-enter class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-16">
       <%= yield %>
     </main>
 
