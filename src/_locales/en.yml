@@ -1,9 +1,11 @@
 en:
-  en: EN
-  gr: ΕΛ
+  en: en
   nav:
     home: Home
     about: About
+    approach: Approach
+    services: Services
+    contact: Contact
   site:
     title: Local Listings
     tagline: The best homes you'll find anywhere in the area.

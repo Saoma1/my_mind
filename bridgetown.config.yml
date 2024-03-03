@@ -37,6 +37,6 @@ template_engine: erb
 # Internationalization (I18n)
 # https://www.bridgetownrb.com/docs/internationalization
 
-available_locales: [en, gr]
-default_locale: en
+available_locales: [gr, en]
+default_locale: gr
 prefix_default_locale: false

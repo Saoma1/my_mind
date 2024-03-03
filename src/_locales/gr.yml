@@ -1,7 +1,11 @@
 gr:
+  gr: gr
   nav:
     home: Αρχική
     about: Προφίλ
+    approach: Προσέγγιση
+    services: Υπηρεσίες
+    contact: Επικοινωνία
   site:
     title: Local Listings
     tagline: The best homes you'll find anywhere in the area.
