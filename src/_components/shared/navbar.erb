@@ -6,11 +6,17 @@
       </div>
       <div class="max-md:hidden ml-6 flex space-x-4">
         <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
-        <a href="<%= relative_url in_locale("/") %>" class="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900"><%= t("nav.home") %></a>
+        <% current_path = @resource.relative_url %>
+
+        <% ["home", "about", "approach", "services", "contact"].each do |path| %>        
+          <% nav_classes = (current_path == relative_url(in_locale("/#{path}/"))) || (path == "home" && current_path == relative_url(in_locale("/"))) ?
+            "inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900" :
+            "inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"   
+          %>
+          <a href="<%= relative_url in_locale("/#{path == "home" ? "" : path}") %>" class="<%= nav_classes %>"><%= t("nav.#{path}") %></a>
+        <% end %>
+
         <a href="<%= relative_url in_locale("/about") %>" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"><%= t("nav.about") %></a>
-        <a href="<%= relative_url in_locale("/approach") %>" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"><%= t("nav.approach") %></a>
-        <a href="<%= relative_url in_locale("/services") %>" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"><%= t("nav.services") %></a>    
-        <a href="<%= relative_url in_locale("/contact")%>" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"><%= t("nav.contact") %></a>
       </div>
 
       <div class="max-md:hidden flex space-x-4">
@@ -18,7 +24,6 @@
           <% @resource.all_locales.each_with_index do |local_resource, index| %>
             <a href="<%= local_resource.relative_url %>" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-md font-medium <%= @current_locale == t(local_resource.data.locale).to_sym ? "text-black" : "text-gray-500" %> hover:border-gray-300 hover:text-gray-700"><%= t(local_resource.data.locale).upcase %></a>
             <% if index == 0 %>
-
               <div class="h-auto bg-black w-[1px] my-2"></div>
             <% end %>
           <% end %>

@@ -7,14 +7,30 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
-    h1 {
-      @apply text-2xl;
-    }
-    h2 {
-      @apply text-xl;
-    }
-    h3 {
-      @apply text-lg;
-    }
+  h1 {
+    font-family: "Noto Serif", sans-serif;
+    font-style: italic;
+    @apply text-5xl;
   }
+  h2 {
+    font-family: "Open Sans", sans-serif;
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+}
+
+body:lang(en) {
+  html {
+    font-family: "Nunito Sans", sans-serif;
+  }
+}
+
+body:lang(gr) {
+  html {
+    font-family: "Noto Sans", sans-serif;
+  }
+}
