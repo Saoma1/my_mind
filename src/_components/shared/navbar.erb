@@ -6,18 +6,28 @@
       </div>
       <div class="max-md:hidden ml-6 flex space-x-4">
         <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
-        <a href="<%= relative_url '/' %>" class="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900">Home</a>
-        <a href="<%= relative_url '/about' %>" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">About</a>
-        <a href="<%= relative_url '/about' %>" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Approach</a>
-        <a href="<%= relative_url '/about' %>" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Contact</a>
-        <a href="<%= relative_url '/about' %>" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Services</a>    
+        <% current_path = @resource.relative_url %>
+
+        <% ["home", "about", "approach", "services", "contact"].each do |path| %>        
+          <% nav_classes = (current_path == relative_url(in_locale("/#{path}/"))) || (path == "home" && current_path == relative_url(in_locale("/"))) ?
+            "inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900" :
+            "inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"   
+          %>
+          <a href="<%= relative_url in_locale("/#{path == "home" ? "" : path}") %>" class="<%= nav_classes %>"><%= t("nav.#{path}") %></a>
+        <% end %>
+
+        <a href="<%= relative_url in_locale("/about") %>" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"><%= t("nav.about") %></a>
       </div>
 
       <div class="max-md:hidden flex space-x-4">
         <div class="flex">
-          <a href="<%= relative_url '/' %>" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-md font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">EN</a>
-          <div class="h-auto bg-black w-[1px] my-2"></div>
-          <a href="<%= relative_url '/' %>" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-md font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">GR</a>
+          <% @resource.all_locales.each_with_index do |local_resource, index| %>
+            <a href="<%= local_resource.relative_url %>" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-md font-medium <%= @current_locale == t(local_resource.data.locale).to_sym ? "text-black" : "text-gray-500" %> hover:border-gray-300 hover:text-gray-700"><%= t(local_resource.data.locale).upcase %></a>
+            <% if index == 0 %>
+              <div class="h-auto bg-black w-[1px] my-2"></div>
+            <% end %>
+          <% end %>
+          
         </div>
         <button class="hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded-xl">
           Book Appointment
@@ -28,6 +38,7 @@
         <button class="hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded-xl shadow text-xs">
           Book Appointment
         </button>
+
         <!-- Mobile menu button -->
         <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-orange-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-200" data-reveal-target="item" data-action="click->reveal#toggle" aria-controls="mobile-menu" aria-expanded="false">
           <i class="fa-solid fa-bars text-2xl" style="color: lightsalmon"></i>

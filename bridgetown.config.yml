@@ -32,3 +32,11 @@ template_engine: erb
 # timezone: America/Los_Angeles
 # pagination:
 #   enabled: true
+
+
+# Internationalization (I18n)
+# https://www.bridgetownrb.com/docs/internationalization
+
+available_locales: [gr, en]
+default_locale: gr
+prefix_default_locale: false

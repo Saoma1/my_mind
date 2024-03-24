@@ -1,8 +1,6 @@
 import "index.css"
 import * as Turbo from "@hotwired/turbo"
 import { Application } from "@hotwired/stimulus"
-import Turn from '@domchristie/turn'
-import '@domchristie/turn/dist/turn.css'
 
 // Uncomment the line below to add transition animations when Turbo navigates.
 // We recommend adding <meta name="turbo-cache-control" content="no-preview" />
@@ -16,7 +14,6 @@ import components from "bridgetownComponents/**/*.{js,jsx,js.rb,css}"
 
 
 application = Application.start()
-Turn.start()
 
 // external
 import Reveal from 'stimulus-reveal-controller'
@@ -35,5 +32,5 @@ Object.entries(controllers).forEach(([filename, controller]) => {
     }
 })
 
-// debuggin
+// debugging
 console.info("Bridgetown is loaded!")
