@@ -10,7 +10,16 @@
 <%# <meta name="turbo-cache-control" contents="no-preview" /> %>
 <%# // %>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="<%= webpack_path :css %>" data-turbo-track="reload" <%# https://turbo.hotwired.dev/handbook/drive#reloading-when-assets-change %> />
 <script src="<%= webpack_path :js %>" defer data-turbo-track="reload"></script>
 <script src="https://kit.fontawesome.com/f52274d5af.js" crossorigin="anonymous"></script>
+
+
+<meta name="turbo-refresh-scroll" content="preserve">
+<meta name="turbo-prefetch" content="true">
+
 <%= live_reload_dev_js %>
