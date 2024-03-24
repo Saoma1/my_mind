@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: "#E9916C",
+        "primary-dark": "#CF5F2F",
+        "bg-primary": "#FFF3EA",
+        "h-dark": "#A98686"
+      },
       fontFamily: {
         noto: ["Noto Serif", "sans-serif"],
         nunito: ["Open Sans", "open-sans"],
