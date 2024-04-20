@@ -12,7 +12,6 @@
   h1 {
     font-family: "Noto Serif", sans-serif;
     font-style: italic;
-    @apply text-5xl;
   }
   h2 {
     font-family: "Open Sans", sans-serif;
