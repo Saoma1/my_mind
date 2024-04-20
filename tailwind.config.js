@@ -9,9 +9,10 @@ module.exports = {
     extend: {
       colors: {
         primary: "#E9916C",
+        "primary-light": "#EEAC90",
         "primary-dark": "#CF5F2F",
-        "bg-primary": "#FFF3EA",
-        "h-dark": "#A98686"
+        "backgound-primary": "#FFF3EA",
+        "header-dark": "#A98686"
       },
       fontFamily: {
         noto: ["Noto Serif", "sans-serif"],

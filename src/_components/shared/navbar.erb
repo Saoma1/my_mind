@@ -1,26 +1,38 @@
-<nav class="bg-white relative mb-16" data-controller="reveal" data-reveal-hidden-class="--open">
+<nav class="bg-white mb-8 sm:mb-16 sticky top-0 w-full shadow" data-controller="reveal" data-reveal-hidden-class="--open">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
     <div class="flex h-16 justify-between items-center">
       <div class="flex flex-shrink-0 ">
-        <img class="h-12 sm:h-16 w-auto" src="/images/logo.svg" alt="company_logo">
+        <img class="h-16 w-auto" src="/images/logo.svg" alt="company_logo">
       </div>
+
+
       <div class="max-md:hidden ml-6 flex space-x-4">
-        <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
         <% current_path = @resource.relative_url %>
 
         <% ["home", "about", "approach", "services", "contact"].each do |path| %>        
-          <% nav_classes = (current_path == relative_url(in_locale("/#{path}/"))) || (path == "home" && current_path == relative_url(in_locale("/"))) ?
-            "inline-flex items-center border-b-2 border-primary px-1 pt-1 text-lg" :
-            "inline-flex items-center px-1 pt-1 text-lg hover:border-b-2 hover:border-gray-300 hover:text-gray-700"   
+          <% a_classes = (current_path == relative_url(in_locale("/#{path}/"))) || (path == "home" && current_path == relative_url(in_locale("/"))) ?
+            "text-primary" : # current path
+            "" # not current path  
           %>
-          <a href="<%= relative_url in_locale("/#{path == "home" ? "" : path}") %>" class="<%= nav_classes %>"><%= t("nav.#{path}") %></a>
+
+          <% span_classes = (current_path == relative_url(in_locale("/#{path}/"))) || (path == "home" && current_path == relative_url(in_locale("/"))) ?
+            "" : # current path
+            "max-w-0 group-hover:max-w-full transition-all duration-500 bg-primary-light" # not current path  
+          %>
+
+          <a href="<%= relative_url in_locale("/#{path == "home" ? "" : path}") %>" class="group text-lg transition duration-300 <%= a_classes %>">
+            <%= t("nav.#{path}") %>
+            <span class="<%= span_classes %> block h-0.5"></span> <%# always %>
+          </a>
         <% end %>
       </div>
 
       <div class="max-md:hidden flex space-x-4">
         <div class="flex">
           <% @resource.all_locales.each_with_index do |local_resource, index| %>
-            <a href="<%= local_resource.relative_url %>" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-md font-bold <%= @current_locale == t(local_resource.data.locale).to_sym ? "text-primary" : "text-gray-500 hover:border-gray-300 hover:text-gray-700"%>"><%= t(local_resource.data.locale).upcase %></a>
+            <a href="<%= local_resource.relative_url %>" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-lg <%= @current_locale == t(local_resource.data.locale).to_sym ? "text-primary" : "text-gray-500 hover:border-gray-300 hover:text-gray-700"%>">
+              <%= t(local_resource.data.locale).upcase %>
+            </a>
             <% if index == 0 %>
               <div class="h-auto bg-black w-[1px] my-2"></div>
             <% end %>
@@ -29,11 +41,14 @@
         <%= render Shared::Button.new(type: "border", text: t("appointment_text"), path: "/") %>
       </div>
 
+
       <div class="-mr-2 flex items-center md:hidden h-full space-x-4">
         <!-- Mobile menu button -->
         <div class="flex">
           <% @resource.all_locales.each_with_index do |local_resource, index| %>
-            <a href="<%= local_resource.relative_url %>" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-md font-bold <%= @current_locale == t(local_resource.data.locale).to_sym ? "text-primary" : "text-gray-500 hover:border-gray-300 hover:text-gray-700"%>"><%= t(local_resource.data.locale).upcase %></a>
+            <a href="<%= local_resource.relative_url %>" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-md <%= @current_locale == t(local_resource.data.locale).to_sym ? "text-primary" : "text-gray-500 hover:border-gray-300 hover:text-gray-700"%>">
+              <%= t(local_resource.data.locale).upcase %>
+            </a>
             <% if index == 0 %>
               <div class="h-auto bg-black w-[1px] my-2"></div>
             <% end %>

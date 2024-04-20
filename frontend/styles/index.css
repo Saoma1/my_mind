@@ -34,3 +34,7 @@ body:lang(gr) {
 ::selection {
   background: #f07948;
 }
+
+a {
+  transition: all 0.3s;
+}
