@@ -5,7 +5,7 @@ layout: default
 locale: multi
 locales:
   - en
-  - gr
+  - ελ
 ---
 
 <div class="space-y-6">
@@ -15,6 +15,9 @@ locales:
   <h2>
     <%= t("heading_1") %>
   </h2>
+  <p class="flex justify-center">
+    <%= t("text_1") %>
+  </p>
   <p class="flex justify-center">
     <%= t("text_1") %>
   </p>
