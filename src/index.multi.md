@@ -8,21 +8,7 @@ locales:
   - ελ
 ---
 
-<div class="space-y-6">
-  <h1>
-    <%= t("hero") %>
-  </h1>
-  <h2>
-    <%= t("heading_1") %>
-  </h2>
-  <p class="flex justify-center">
-    <%= t("text_1") %>
-  </p>
-  <p class="flex justify-center">
-    <%= t("text_1") %>
-  </p>
-  <p>
-    <%= t("welcome.intro") %>
-  </p>
+<div class="space-y-16">
+  <%= render "hero_section" %>
 </div>
 
