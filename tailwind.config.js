@@ -20,7 +20,16 @@ module.exports = {
         nunito: ["Nunito Sans", "sans-serif"],
         nunito: ["Noto Sans", "noto-sans"],
       },
+      spacing: {
+        xs: '4px',
+        sm: '8px',
+        md: '12px',
+        lg: '16px',
+        xl: '24px',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio')
+  ],
 }

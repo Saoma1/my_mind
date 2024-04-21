@@ -15,7 +15,6 @@
   }
   h2 {
     font-family: "Open Sans", sans-serif;
-    @apply text-xl;
   }
   h3 {
     @apply text-lg;
