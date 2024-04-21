@@ -10,11 +10,11 @@ en:
   hero: Your mental health is a priority
   hero_sub: Don’t wait around for your problems to get more complicated. Embark on a Journey to Emotional Well-Being and Discover a Path to a Happier, Healthier You!
   about_me_heading: About Me
-  about_me_text:
+  about_me_text_html:
           My name is Helen Lekka and i am a licensed Psychologist - Psychotherapist, fluent in both English and Greek. 
           She is a dedicated and experienced psychologist that believes in a holistic approach to mental health, emphasizing the importance of understanding each individual's unique journey.
           <br><br>
-          With a compassionate and empathetic demeanor, Eleni provides a safe and nurturing environment for her clients, helping them navigate life's challenges and achieve their personal goals. 
+          <span class="text-primary">With a compassionate and empathetic demeanor, Eleni provides a safe and nurturing environment for her clients, helping them navigate life's challenges and achieve their personal goals.</span>
           Whether you're seeking guidance, coping strategies, or a deeper understanding of yourself, Eleni is here to support and empower you on your path to well-being.
   site:
     title: Local Listings
