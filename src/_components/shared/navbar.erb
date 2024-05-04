@@ -2,7 +2,9 @@
   <div class="bg-white shadow py-6">
     <div class="flex h-16 justify-between items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-shrink-0">
-        <img class="h-16 w-auto" src="/images/logo.svg" alt="company_logo">
+        <a href="<%= relative_url(in_locale("/")) %>">
+          <img class="h-16 w-auto" src="/images/logo.svg" alt="company_logo">
+        </a>
       </div>
 
 
@@ -65,7 +67,7 @@
   </div>
 
   <!-- Mobile menu, show/hide based on menu state. -->
-  <div data-reveal-target="item" class="absolute top-0 w-full max-md:[&.--open]:translate-y-[35%] translate-y-[-100%] transition-transform duration-700 bg-white rounded-b-2xl shadow-2xl">
+  <div data-reveal-target="item" class="absolute top-0 w-full max-md:[&.--open]:translate-y-[34%] translate-y-[-100%] transition-transform duration-700 bg-white rounded-b-2xl shadow-2xl border-t">
     <div class="space-y-2 py-6 text-center">
       <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
 
