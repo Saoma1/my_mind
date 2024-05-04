@@ -3,7 +3,7 @@
   <head>
     <%= render "head", metadata: site.metadata, title: data.title %>
   </head>
-  <body class="<%= data.layout %> <%= data.page_class %> bg-white relative">
+  <body class="<%= data.layout %> <%= data.page_class %> bg-white relative mt-36">
     <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource, current_locale: site.locale) %>
 
     <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-24 lg:space-y-16">

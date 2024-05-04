@@ -1,6 +1,6 @@
-<nav class="bg-white mb-8 sm:mb-24 sticky top-0 w-full shadow z-50" data-controller="reveal" data-reveal-hidden-class="--open">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
-    <div class="flex h-16 justify-between items-center">
+<nav class="mb-8 sm:mb-24 fixed top-0 w-full z-50" data-controller="reveal" data-reveal-hidden-class="--open">
+  <div class="bg-white shadow py-6">
+    <div class="flex h-16 justify-between items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-shrink-0">
         <img class="h-16 w-auto" src="/images/logo.svg" alt="company_logo">
       </div>
@@ -55,7 +55,7 @@
           <% end %>
         </div>
 
-        <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-orange-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-200" data-reveal-target="item" data-action="click->reveal#toggle" aria-controls="mobile-menu" aria-expanded="false">
+        <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-orange-50" data-reveal-target="item" data-action="click->reveal#toggle" aria-controls="mobile-menu" aria-expanded="false">
           <i class="fa-solid fa-bars text-2xl" style="color: lightsalmon"></i>
           <span class="absolute -inset-0.5"></span>
           <span class="sr-only">Open main menu</span>
@@ -65,13 +65,17 @@
   </div>
 
   <!-- Mobile menu, show/hide based on menu state. -->
-  <div data-reveal-target="item" class="fixed w-full left-0 max-md:[&.--open]:translate-x-1/2 translate-x-[110%] transition-transform duration-700 z-[1000] rounded-l-xl bg-orange-100 shadow-2xl">
-    <div class="space-y-2 pb-3 py-6 rounded-l-xl">
+  <div data-reveal-target="item" class="absolute top-0 w-full max-md:[&.--open]:translate-y-[35%] translate-y-[-100%] transition-transform duration-700 bg-white rounded-b-2xl shadow-2xl">
+    <div class="space-y-2 py-6 text-center">
       <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
-      <a href="<%= relative_url '/' %>" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium hover:border-orange-500 hover:bg-gray-50 hover:text-gray-700">Home</a>
-      <a href="<%= relative_url '/about' %>" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-orange-500 hover:bg-gray-50 hover:text-gray-700">About</a>
-      <a href="#" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-orange-500 hover:bg-gray-50 hover:text-gray-700">Contact</a>
-      <a href="#" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-orange-500 hover:bg-gray-50 hover:text-gray-700">Services</a>
+
+        <% ["home", "about", "approach", "services", "contact"].each do |path| %>        
+          <% a_classes = (current_path == relative_url(in_locale("/#{path}/"))) || (path == "home" && current_path == relative_url(in_locale("/"))) ?
+            "text-primary" : # current path
+            "text-gray-500" # not current path  
+          %>
+          <a href="<%= relative_url in_locale("/#{path == "home" ? "" : path}") %>" class="block border-l-4 border-transparent py-2 pl-3 pr-4 font-medium hover:bg-orange-100 hover:text-gray-700 <%= a_classes %>"><%= t("nav.#{path}") %></a>
+      <% end %>  
       <%= render Shared::Button.new(type: "standart", text: t("appointment_text"), path: "/") %>
     </div>
   </div>
