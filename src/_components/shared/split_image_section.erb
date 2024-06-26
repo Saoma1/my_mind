@@ -4,9 +4,14 @@
     </div>
 
     <div class="mx-auto max-w-2xl px-4 lg:pt-16 sm:px-6 sm:pb-32 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-x-4 lg:px-8 lg:spt-16">
-        <div class="<%= @image_left ? "lg:col-start-2" : "" %>">
+        <div class="space-y-4 <%= @image_left ? "lg:col-start-2" : "" %>">
             <h2 class="font-medium text-header-dark text-3xl"><%= @header %></h2>
-            <p class="mt-4 text-gray-500"><%= content %></p>
+            <p class="text-gray-500"><%= content %></p>
+
+            <% if @link_text.present? %>
+                <%= render Shared::Button.new(type: "text", text: @link_text, path: @link_path) %>
+            <% end %>
+
         </div>
     </div>
 </section>

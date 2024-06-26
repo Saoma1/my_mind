@@ -11,15 +11,15 @@
       <div class="max-md:hidden ml-6 flex space-x-4">
         <% current_path = @resource.relative_url %>
 
-        <% ["home", "about", "approach", "services", "contact"].each do |path| %>        
+        <% ["home", "about", "approach", "services", "contact"].each do |path| %>
           <% a_classes = (current_path == relative_url(in_locale("/#{path}/"))) || (path == "home" && current_path == relative_url(in_locale("/"))) ?
             "text-primary" : # current path
-            "" # not current path  
+            "" # not current path
           %>
 
           <% span_classes = (current_path == relative_url(in_locale("/#{path}/"))) || (path == "home" && current_path == relative_url(in_locale("/"))) ?
             "" : # current path
-            "max-w-0 group-hover:max-w-full transition-all duration-500 bg-primary-light" # not current path  
+            "max-w-0 group-hover:max-w-full transition-all duration-500 bg-primary-light" # not current path
           %>
 
           <a href="<%= relative_url in_locale("/#{path == "home" ? "" : path}") %>" class="group text-lg transition duration-300 <%= a_classes %>">
@@ -75,10 +75,10 @@
         <% ["home", "about", "approach", "services", "contact"].each do |path| %>
           <% a_classes = (current_path == relative_url(in_locale("/#{path}/"))) || (path == "home" && current_path == relative_url(in_locale("/"))) ?
             "text-primary" : # current path
-            "text-gray-500" # not current path  
+            "text-gray-500" # not current path
           %>
           <a href="<%= relative_url in_locale("/#{path == "home" ? "" : path}") %>" class="block border-l-4 border-transparent py-2 pl-3 pr-4 font-medium hover:bg-orange-100 hover:text-gray-700 <%= a_classes %>"><%= t("nav.#{path}") %></a>
-      <% end %>  
+      <% end %>
       <%= render Shared::Button.new(type: "standart", text: t("appointment_text"), path: "/") %>
     </div>
   </div>

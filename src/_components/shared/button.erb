@@ -1,3 +1,6 @@
-<a href="<%= @path %>" class="<%= type_style %> inline-block transition-all duration-300 rounded-xl px-3.5 py-2.5 text-sm font-semibold shadow-sm focus-visible:outline-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+<a href="<%= @path %>" class="<%= type_style %> group inline-block transition-all duration-300 rounded-xl py-2.5 text-sm font-semibold focus-visible:outline-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
     <%= @text %>
+    <% if @type == "text" %>
+        <i class="transition-all fa-solid fa-arrow-right text-primary group-hover:text-primary-dark group-hover:translate-x-1"></i>
+    <% end %>
 </a>
