@@ -24,6 +24,15 @@ en:
           <br><br>
           Complementing this approach, Person-Centered Therapy  is just as important since it focuses on the needs of each individual, ensuring that people's preferences, needs and values guide clinical decisions, and providing care that is respectful of and responsive to them. Complementing these is Cognitive-Behavioral Therapy, providing practical strategies to manage and change negative thought patterns, empowering individuals to face life's challenges with resilience.
           <span class="text-primary">By weaving these therapies together, I offer a comprehensive journey tailored to the unique needs of each individual, guiding them towards a healthier, more fulfilled life.</span>
+  card_1_heading: Psychodynamic Therapy
+  card_1_text: Uncover and address the underlying patterns and emotions that shape your thoughts and behaviors. Gain insight into your past experiences and how they impact your present, fostering personal growth and healing.
+  card_1_url: /services
+  card_2_heading: Person-Centered Therapy
+  card_2_text: Experience a therapeutic relationship built on empathy, respect, and unconditional positive regard. Find a safe space to express yourself authentically, fostering self-acceptance, and personal growth.
+  card_2_url: /services
+  card_3_heading: Cognitive-Behavioral Therapy
+  card_3_text: Learn practical strategies to identify and change negative thought patterns and behaviors. Achieve tangible results and develop effective coping skills for a brighter future.
+  card_3_url: /services
   site:
     title: Local Listings
     tagline: The best homes you'll find anywhere in the area.

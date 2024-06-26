@@ -18,5 +18,9 @@ locales:
     <%= t("my_approach_text_html").html_safe %>
   <% end %>
 
-
+  <div class="grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-1 sm:gap-y-10 lg:grid-cols-3">
+    <%= render Shared::Card.new(image: "/images/card_1.jpg", heading: t("card_1_heading"), text: t("card_1_text"), path: t("card_1_url")) %>
+    <%= render Shared::Card.new(image: "/images/card_2.jpg", heading: t("card_2_heading"), text: t("card_2_text"), path: t("card_2_url")) %>
+    <%= render Shared::Card.new(image: "/images/card_3.jpg", heading: t("card_3_heading"), text: t("card_3_text"), path: t("card_3_url")) %>
+  </div>
 </div>
