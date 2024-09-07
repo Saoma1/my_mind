@@ -1,7 +1,17 @@
-
-<% if false %>
-  <footer>
-    Contact me at <a href="mailto:<%= metadata.email %>"><%= metadata.email %></a>
-  </footer>
-<% end %>
-
+<footer class="py-4 px-6 mb-8 text-center">
+  <div class="mb-2 text-sm">
+    © <%= Time.now.year %> Messinia Mind Matter. All rights reserved. | 123 Main Street, Pylos, Messinia, Greece Phone: +30 123-456-7890
+  </div>
+  <div class="flex justify-center items-center">
+    <span class="mr-2 text-sm">Follow Me:</span>
+    <a href="#" class="mx-1 hover:text-gray-800">
+      <Facebook size={20} />
+    </a>
+    <a href="#" class="mx-1 hover:text-gray-800">
+      <Twitter size={20} />
+    </a>
+    <a href="#" class="mx-1 hover:text-gray-800">
+      <Instagram size={20} />
+    </a>
+  </div>
+</footer>

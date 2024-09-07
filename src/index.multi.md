@@ -5,7 +5,7 @@ layout: default
 locale: multi
 locales:
   - en
-  - ελ
+  - el
 ---
 
 <div class="space-y-16 mb-16">

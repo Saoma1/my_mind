@@ -21,11 +21,12 @@
   }
 }
 
-body:lang(en) {
+/* Increase specificity for language-specific styles */
+html body:lang(en) {
   font-family: "Nunito Sans", sans-serif;
 }
 
-body:lang(gr) {
+html body:lang(el) {
   font-family: "Noto Sans", sans-serif;
 }
 
