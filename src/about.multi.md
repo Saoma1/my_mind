@@ -4,7 +4,7 @@ layout: page
 locale: multi
 locales:
   - en
-  - ελ
+  - el
 ---
 
 <div class="space-y-6">
