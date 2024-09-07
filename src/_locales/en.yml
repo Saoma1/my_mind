@@ -7,40 +7,57 @@ en:
     services: Services
     contact: Contact
   appointment_text: Book Appointment
-  hero: Your mental health is a priority
-  hero_sub: Don’t wait around for your problems to get more complicated. Embark on a Journey to Emotional Well-Being and Discover a Path to a Happier, Healthier You!
-  about_me_heading: About Me
-  about_me_text_html:
-          My name is Helen Lekka and i am a licensed Psychologist - Psychotherapist, fluent in both English and Greek.
-          She is a dedicated and experienced psychologist that believes in a holistic approach to mental health, emphasizing the importance of understanding each individual's unique journey.
-          <br><br>
-          <span class="text-primary">With a compassionate and empathetic demeanor, Eleni provides a safe and nurturing environment for her clients, helping them navigate life's challenges and achieve their personal goals.</span>
-          Whether you're seeking guidance, coping strategies, or a deeper understanding of yourself, Eleni is here to support and empower you on your path to well-being.
-  about_me_link_text: Find out more about me
-  about_me_link_url: /about
-  my_approach_heading: My Approach to Therapy
-  my_approach_text_html:
-          My practice is based on a holistic blend of three therapeutic approaches:/ Psychodynamic, Person-Centered, and Cognitive-Behavioral therapy. Utilizing Psychodynamic Therapy, which involves exploring past experiences and unconscious processes, we uncover and understand deeply ingrained patterns and behaviors.
-          <br><br>
-          Complementing this approach, Person-Centered Therapy  is just as important since it focuses on the needs of each individual, ensuring that people's preferences, needs and values guide clinical decisions, and providing care that is respectful of and responsive to them. Complementing these is Cognitive-Behavioral Therapy, providing practical strategies to manage and change negative thought patterns, empowering individuals to face life's challenges with resilience.
-          <span class="text-primary">By weaving these therapies together, I offer a comprehensive journey tailored to the unique needs of each individual, guiding them towards a healthier, more fulfilled life.</span>
-  card_1_heading: Psychodynamic Therapy
-  card_1_text: Uncover and address the underlying patterns and emotions that shape your thoughts and behaviors. Gain insight into your past experiences and how they impact your present, fostering personal growth and healing.
-  card_1_url: /services
-  card_2_heading: Person-Centered Therapy
-  card_2_text: Experience a therapeutic relationship built on empathy, respect, and unconditional positive regard. Find a safe space to express yourself authentically, fostering self-acceptance, and personal growth.
-  card_2_url: /services
-  card_3_heading: Cognitive-Behavioral Therapy
-  card_3_text: Learn practical strategies to identify and change negative thought patterns and behaviors. Achieve tangible results and develop effective coping skills for a brighter future.
-  card_3_url: /services
-  review_card_1_text: I began seeing Helen during a particularly challenging period in my life. Her compassionate approach and insightful guidance have been instrumental in helping me navigate through my struggles. I've grown so much as a person since our sessions began, and I can't thank her enough for her unwavering support.
-  review_card_1_author: Alexandra M.
-  review_card_2_text: Helen's expertise in cognitive behavioral therapy has been life-changing for me. Her patience and ability to break down complex emotional issues into manageable steps have given me the tools to cope with my anxiety. I've seen remarkable improvement in my daily life, and I'm grateful for her professional and caring approach.
-  review_card_2_author: Zoe E.
-  review_card_3_text: I was skeptical about therapy at first, but Helen's warm demeanor and non-judgmental approach put me at ease immediately. Through our sessions, I've gained valuable insights into my relationships and developed healthier communication patterns. Her guidance has been instrumental in my personal growth and self-discovery journey.
-  review_card_3_author: Michael I.
-  site:
-    title: Local Listings
-    tagline: The best homes you'll find anywhere in the area.
-  welcome:
-    intro: Welcome to Local Listings! Enjoy our fine selection.
+  instagram_path: https://www.instagram.com/bettermepsych/
+  home:
+    hero: Your mental health is a priority
+    hero_sub: Don’t wait around for your problems to get more complicated. Embark on a Journey to Emotional Well-Being and Discover a Path to a Happier, Healthier You!
+    about_me_heading: About Me
+    about_me_text_html:
+            My name is Helen Lekka and i am a licensed Psychologist - Psychotherapist, fluent in both English and Greek.
+            She is a dedicated and experienced psychologist that believes in a holistic approach to mental health, emphasizing the importance of understanding each individual's unique journey.
+            <br><br>
+            <span class="text-primary">With a compassionate and empathetic demeanor, Eleni provides a safe and nurturing environment for her clients, helping them navigate life's challenges and achieve their personal goals.</span>
+            Whether you're seeking guidance, coping strategies, or a deeper understanding of yourself, Eleni is here to support and empower you on your path to well-being.
+    about_me_link_text: Find out more about me
+    about_me_link_url: /about
+    my_approach_heading: My Approach to Therapy
+    my_approach_text_html:
+            My practice is based on a holistic blend of three therapeutic approaches:/ Psychodynamic, Person-Centered, and Cognitive-Behavioral therapy. Utilizing Psychodynamic Therapy, which involves exploring past experiences and unconscious processes, we uncover and understand deeply ingrained patterns and behaviors.
+            <br><br>
+            Complementing this approach, Person-Centered Therapy  is just as important since it focuses on the needs of each individual, ensuring that people's preferences, needs and values guide clinical decisions, and providing care that is respectful of and responsive to them. Complementing these is Cognitive-Behavioral Therapy, providing practical strategies to manage and change negative thought patterns, empowering individuals to face life's challenges with resilience.
+            <span class="text-primary">By weaving these therapies together, I offer a comprehensive journey tailored to the unique needs of each individual, guiding them towards a healthier, more fulfilled life.</span>
+    card_1_heading: Psychodynamic Therapy
+    card_1_text: Uncover and address the underlying patterns and emotions that shape your thoughts and behaviors. Gain insight into your past experiences and how they impact your present, fostering personal growth and healing.
+    card_1_url: /services
+    card_2_heading: Person-Centered Therapy
+    card_2_text: Experience a therapeutic relationship built on empathy, respect, and unconditional positive regard. Find a safe space to express yourself authentically, fostering self-acceptance, and personal growth.
+    card_2_url: /services
+    card_3_heading: Cognitive-Behavioral Therapy
+    card_3_text: Learn practical strategies to identify and change negative thought patterns and behaviors. Achieve tangible results and develop effective coping skills for a brighter future.
+    card_3_url: /services
+    review_card_1_text: I began seeing Helen during a particularly challenging period in my life. Her compassionate approach and insightful guidance have been instrumental in helping me navigate through my struggles. I've grown so much as a person since our sessions began, and I can't thank her enough for her unwavering support.
+    review_card_1_author: Alexandra M.
+    review_card_2_text: Helen's expertise in cognitive behavioral therapy has been life-changing for me. Her patience and ability to break down complex emotional issues into manageable steps have given me the tools to cope with my anxiety. I've seen remarkable improvement in my daily life, and I'm grateful for her professional and caring approach.
+    review_card_2_author: Zoe E.
+    review_card_3_text: I was skeptical about therapy at first, but Helen's warm demeanor and non-judgmental approach put me at ease immediately. Through our sessions, I've gained valuable insights into my relationships and developed healthier communication patterns. Her guidance has been instrumental in my personal growth and self-discovery journey.
+    review_card_3_author: Michael I.
+  about:
+    hero_header: It's nice to meet you
+    hero: I am Eleni Lekka, a certified psychologist/psychotherapist with a professional license, and the head of Mind Matters based in Pylos, Messinia. My path in the world of psychology has been guided by empathy and the belief that everyone deserves support and guidance on their journey towards personal growth. My approach to therapy is based on my faith in the resilience of the human spirit as well as the prospect and potential for positive change. I understand that seeking help is a very brave step, and I am here to provide a warm, welcoming, and accepting space for you to explore your inner world.
+    section_header: Academic Background and Experience
+    section_text:
+      My educational journey in psychology began at the Metropolitan College of Piraeus, where I earned my Bachelor's Degree in Psychology. This foundational education laid the groundwork for my passion to delve deeper into the field.
+      <br><br>
+      Driven by a desire to provide the most comprehensive and effective support to my clients, I continued my academic journey and proudly graduated with a Master's Degree in Integrative Counseling and Psychotherapy. Integrative Psychotherapy holds a special place in my heart because it seamlessly combines three distinct therapeutic approaches into one powerful framework. This integrative approach allows me to offer tailored solutions for a wide range of challenges. From issues related to sexuality, anxiety, and depression to anger management, panic attacks, and difficulties in communication and expression, I am equipped to address the diverse needs of those seeking my guidance.
+      <br><br>
+      My actual experience as a psychologist started during my Master’s studies, in Roots Wellness Center, a bilingual center located in Athens where I underwent three years of comprehensive training. During my time there, i conducted individual therapy sessions to help individuals manage and overcome mental health concerns. On top of that, i attended regular supervision and professional development sessions to enhance my therapeutic skills.
+      <br><br>
+      After finishing my training and acquiring my Master’s Degree, i continued working as a licensed Psychologist - Psychotherapist and i’m still doing that to this day. Through my extensive experience in conducting therapeutic sessions, I have deepened my understanding of the complexities inherent in the therapeutic process. With each session, I have gained valuable insights into the diverse needs and concerns of each individual, allowing me to refine my approach and adapt my techniques accordingly. This hands-on experience has not only strengthened my ability to establish rapport and create a safe, supportive environment but has also equipped me with the tools to facilitate meaningful and transformative outcomes for those seeking help on their journey towards healing and self-discovery.
+      <br><br>
+      I am committed to fostering a therapeutic partnership that prioritizes your unique needs and goals, guiding you on a path towards healing and personal growth. Let's embark on this transformative journey together.
+    section_element_1_headline: tbd
+    section_element_1_text: Awesome Stuff
+    section_element_2_headline: Master's Degree in Integrative Counseling and Psychotherapy
+    section_element_1_text: Mediterranean College of Athens
+    section_element_3_headline: Bachelor's Degree in Psychology
+    section_element_1_text: Metropolitan College of Piraeus
