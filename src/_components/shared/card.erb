@@ -1,12 +1,12 @@
-<div class="group relative border border-primary hover:border-primary-dark rounded-xl p-4 transition-all duration-500">
+<div class="group relative border border-primary hover:border-primary-dark hover:outline outline-primary hover:outline-2 rounded-xl p-4 transition-all">
     <div class="aspect-h-3 aspect-w-4 overflow-hidden rounded-xl bg-gray-100">
         <img src="<%= @image %>" alt="" class="object-cover object-center group-hover:scale-110 scale-100 transition-all duration-500">
     </div>
     <div class="mt-4">
         <h3 class="font-normal text-header-dark text-xl">
             <a href="<%= @path %>">
-            <span aria-hidden="true" class="absolute inset-0"></span>
-            <%= @heading %>
+                <span aria-hidden="true" class="absolute inset-0"></span>
+                <%= @heading %>
             </a>
         </h3>
     </div>
