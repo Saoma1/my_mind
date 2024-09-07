@@ -1,0 +1,37 @@
+<h3 class="text-3xl border-b pb-4">
+  <%= t("about.section_header").html_safe %>
+</h3>
+
+<div class="max-sm:flex-col sm:flex sm:space-x-16 max-sm:space-y-8 items-center px-4 sm:px-8">
+  <div class="min-w-72">
+    <ul class="relative border-r-2 border-primary mr-6">
+      <li class="mb-10 mr-6">
+        <span class="absolute flex items-center justify-center w-4 h-4 bg-white rounded-full -right-[9px] ring-4 ring-white border-2 border-primary">
+          <div class="w-1.5 h-1.5 rounded-full"></div>
+        </span>
+        <h3 class="mb-1 text-lg font-semibold text-gray-900">2023 - Present</h3>
+        <p class="mb-2 text-base font-normal text-gray-700"><%= t("about.section_element_1_headline") %></p>
+        <p class="text-sm font-normal text-gray-500"><%= t("about.section_element_1_text") %></p>
+      </li>
+      <li class="mb-10 mr-6">
+        <span class="absolute flex items-center justify-center w-4 h-4 bg-white rounded-full -right-[9px] ring-4 ring-white border-2 border-primary">
+          <div class="w-1.5 h-1.5 rounded-full"></div>
+        </span>
+        <h3 class="mb-1 text-lg font-semibold text-gray-900">2018 - 2021</h3>
+        <p class="mb-2 text-base font-normal text-gray-700"><%= t("about.section_element_2_headline") %></p>
+        <p class="text-sm font-normal text-gray-500"><%= t("about.section_element_2_text") %><</p>
+      </li>
+      <li class="mr-6">
+        <span class="absolute flex items-center justify-center w-4 h-4 bg-white rounded-full -right-[9px] ring-4 ring-white border-2 border-primary">
+          <div class="w-1.5 h-1.5 rounded-full"></div>
+        </span>
+        <h3 class="mb-1 text-lg font-semibold text-gray-900">2015 - 2018</h3>
+        <p class="mb-2 text-base font-normal text-gray-700"><%= t("about.section_element_3_headline") %></p>
+        <p class="text-sm font-normal text-gray-500"><%= t("about.section_element_3_text") %><</p>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <%= t("about.section_text").html_safe %>
+  </div>
+</div>

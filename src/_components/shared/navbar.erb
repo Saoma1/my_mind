@@ -1,12 +1,11 @@
 <nav class="mb-8 sm:mb-24 fixed top-0 w-full z-50" data-controller="reveal" data-reveal-hidden-class="--open">
   <div class="bg-white shadow py-6">
-    <div class="flex h-16 justify-between items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex h-16 justify-between items-center max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-shrink-0">
         <a href="<%= relative_url(in_locale("/")) %>">
           <img class="h-16 w-auto" src="/images/logo.svg" alt="company_logo">
         </a>
       </div>
-
 
       <div class="max-md:hidden ml-6 flex space-x-4">
         <% current_path = @resource.relative_url %>
