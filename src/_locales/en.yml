@@ -28,13 +28,13 @@ en:
             <span class="text-primary">By weaving these therapies together, I offer a comprehensive journey tailored to the unique needs of each individual, guiding them towards a healthier, more fulfilled life.</span>
     card_1_heading: Psychodynamic Therapy
     card_1_text: Uncover and address the underlying patterns and emotions that shape your thoughts and behaviors. Gain insight into your past experiences and how they impact your present, fostering personal growth and healing.
-    card_1_url: /services
+    card_1_url: /approach#psychodynamic-therapy
     card_2_heading: Person-Centered Therapy
     card_2_text: Experience a therapeutic relationship built on empathy, respect, and unconditional positive regard. Find a safe space to express yourself authentically, fostering self-acceptance, and personal growth.
-    card_2_url: /services
+    card_2_url: /approach#person-centered-therapy
     card_3_heading: Cognitive-Behavioral Therapy
     card_3_text: Learn practical strategies to identify and change negative thought patterns and behaviors. Achieve tangible results and develop effective coping skills for a brighter future.
-    card_3_url: /services
+    card_3_url: /approach#cognitive-behavioral-therapy
     review_card_1_text: I began seeing Helen during a particularly challenging period in my life. Her compassionate approach and insightful guidance have been instrumental in helping me navigate through my struggles. I've grown so much as a person since our sessions began, and I can't thank her enough for her unwavering support.
     review_card_1_author: Alexandra M.
     review_card_2_text: Helen's expertise in cognitive behavioral therapy has been life-changing for me. Her patience and ability to break down complex emotional issues into manageable steps have given me the tools to cope with my anxiety. I've seen remarkable improvement in my daily life, and I'm grateful for her professional and caring approach.
@@ -61,3 +61,20 @@ en:
     section_element_1_text: Mediterranean College of Athens
     section_element_3_headline: Bachelor's Degree in Psychology
     section_element_1_text: Metropolitan College of Piraeus
+  approach:
+    hero_header: Compassionate & Client-Centered Care
+    hero: 
+      Through our sessions, I’m dedicated to helping you navigate life's challenges and achieve emotional well-being. My range of therapeutic services is designed to provide tailored solutions to meet your unique needs.Explore the different therapeutic approaches I offer and learn how I can support you on your journey to personal growth and healing. I believe that everyone deserves the opportunity to thrive, and I am here to provide the guidance and support you need to do just that.
+    hero_cta_text:
+      Book your first appointment free of charge!
+    sub_heading_1: How It Works
+    sub_heading_2: Benefits
+    description_1: <span class="text-primary bold">Psychodynamic therapy</span> is a deeply introspective and insightful approach to understanding and addressing psychological challenges. Rooted in the idea that our past experiences, often from early childhood, significantly influence our present thoughts, emotions, and behaviors, psychodynamic therapy aims to uncover and process these underlying factors.
+    how_it_works_1: In psychodynamic therapy, we explore your unconscious mind, allowing hidden emotions, memories, and patterns to surface. By examining the root causes of current challenges and addressing unresolved issues, you can gain profound insights into your thoughts and behaviors.
+    benefits_1: ["Self-Discovery: Gain a deeper understanding of your inner world and how past experiences shape your present", "Emotional Healing: Address unresolved emotions and traumas, leading to emotional healing and personal growth.", "Enhanced Self-Awareness: Develop greater self-awareness and self-acceptance.", "Improved Relationships: Enhance your ability to build and maintain healthier relationships."]
+    description_2: <span class="text-primary bold">Person-Centered Therapy</span>, often referred to as Rogerian therapy, is rooted in the belief that individuals have an innate capacity for personal growth and self-actualization. This approach provides a supportive and non-judgmental environment where you can explore your feelings, thoughts, and experiences freely.
+    how_it_works_2: In person-centered therapy, the focus is on you, while your therapist creates a safe, empathetic, and accepting space for you to express yourself authentically. The therapeutic relationship is built on trust and unconditional positive regard, allowing you to delve into your emotions and gain a deeper understanding of your inner self.
+    benefits_2: ["Self-Acceptance: Develop a greater sense of self-acceptance and self-worth.", "Enhanced Communication: Improve your ability to express yourself openly and honestly.", "Personal Growth: Foster personal growth, self-discovery, and self-actualization.", "Emotional Healing: Address emotional challenges and build resilience."]
+    description_3: <span class="text-primary bold">Cognitive-Behavioral Therapy (CBT)</span>  is a goal-oriented, practical approach that focuses on identifying and modifying negative thought patterns and behaviors. It is highly effective for individuals seeking tangible solutions to a wide range of psychological challenges.
+    how_it_works_3: In CBT, we will work collaboratively to identify specific thought patterns and behaviors that contribute to your challenges. Together, we will develop practical strategies to change these patterns, leading to improved mental well-being and more effective coping skills.
+    benefits_3: ["Positive Change: Achieve tangible, positive changes in your thoughts and behaviors.", "Symptom Reduction: Reduce symptoms of anxiety, depression, and other mental health concerns.", "Enhanced Coping: Develop effective coping skills for life's challenges.", "Problem-Solving: Improve problem-solving and decision-making abilities."]

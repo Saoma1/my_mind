@@ -1,0 +1,27 @@
+<div class="flex items-center justify-center max-md:p-4">  
+  <div class="flex flex-col md:flex-row <%= image_left? ? '' : 'md:flex-row-reverse' %>">
+    <!-- Image -->
+    <img src="<%= @image_url %>" alt="Decorative image representing psychodynamic therapy" class="sm:w-1/2 object-cover object-center rounded-2xl shadow-2xl <%= image_left? ? 'md:mr-16' : '' %>"/>
+    
+    <!-- Content -->
+    <div class="w-full space-y-xl max-md:p-4 <%= image_left? ? '' : 'md:mr-16' %>">
+      <p class="text-gray-500"><%= @description.html_safe %></p>
+      
+      <div class="flex flex-col md:flex-row gap-8">
+        <div class="md:w-1/2 md:space-y-md space-y-sm">
+          <h5 class="text-lg text-header-dark peer"><%= t('approach.sub_heading_1') %>:</h5>
+          <p class="text-gray-500 peer-hover:text-transparent peer-"><%= @how_it_works %></p>
+        </div>
+        
+        <div class="md:w-1/2 md:space-y-md space-y-sm">
+          <h5 class="text-lg text-header-dark"><%= t('approach.sub_heading_2') %>:</h5>
+          <ul class="text-gray-500 list-disc pl-5">
+            <% @benefits.each do |benefit| %>
+              <li><%= benefit %></li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -21,6 +21,9 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
 /* Increase specificity for language-specific styles */
 html body:lang(en) {
   font-family: "Nunito Sans", sans-serif;

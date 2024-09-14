@@ -1,0 +1,10 @@
+<div class="flex items-center justify-center">
+    <div class="space-y-xl max-w-4xl sm:text-center px-4">
+        <h2 class="font-normal text-header-dark text-3xl">
+            <%= t('approach.hero_header') %>
+        </h2>
+        <p class="text-gray-500"><%= t('approach.hero') %></p>
+        <p><%= t('approach.hero_cta_text') %></p>
+        <%= render Shared::Button.new(type: "standart", text: t("appointment_text"), path: "/") %>
+    </div>
+</div>
