@@ -4,10 +4,6 @@ export default class extends Controller {
     static targets = ["line1", "line2", "line3"]
     open = false;
 
-    connect() {
-      console.log("hello")
-    }
-
     toggle() {
         this.open = !this.open;
         this.line1Target.classList.toggle('rotate-45', this.open);
